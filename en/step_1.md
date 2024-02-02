@@ -1,59 +1,32 @@
-## Introduction
+In CSS, `position: sticky` is a positioning property that combines features of both `position: relative` and `position: fixed`. 
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+Here's how it works:
 
-### What you will make
++ When an element is set to `position: sticky`, it initially behaves like `position: relative`. This means the element will appear in the normal position in the document until the specified scroll point is reached.
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
++ Once the user scrolls to the specified point, the element switches to a fixed position and does not scroll with the rest of the content.
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
 
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
+Here's an example:
 
---- collapse ---
+--- code ---
 ---
-title: What you will need
----
-### Hardware
-
-+ A computer or tablet capable of running Scratch 3
-
-### Software
-
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](https://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
+language: css
+filename:
+line_numbers: true
+line_number_start: 1
+line_highlights: 
 ---
 
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
+.sticky-element {
+  position: sticky;
+  top: 50px;
+}
 
---- /collapse ---
+--- /code ---
 
---- collapse ---
----
-title: Additional information for educators
----
+Line 2 sets the position property to `sticky` for any element with the attribute `class="sticky-element"`.
 
-You can download the completed project [here](https://rpf.io/p/en/projectName-get){:target="_blank"}.
+Line 3 sets the distance from the top of the viewport where the element becomes 'sticky' (its position becomes fixed).
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
-
---- /collapse ---
+`position: sticky` is often used for navigation bars or elements that you want to remain visible as the user scrolls down the page but return to their normal position when scrolling back up.
