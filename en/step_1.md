@@ -1,11 +1,10 @@
-In CSS, `position: sticky` is a positioning property that combines features of both `position: relative` and `position: fixed`. 
+`position: sticky` is often used for navigation bars or elements that you want to remain visible as the user scrolls down the page but return to their normal position when scrolling back up.
 
-Here's how it works:
+When an element is set to `position: sticky`, it initially behaves like `position: relative`. 
 
-+ When an element is set to `position: sticky`, it initially behaves like `position: relative`. This means the element will appear in the normal position in the document until the specified scroll point is reached.
+This means the element will appear in the normal position in the document. 
 
-+ Once the user scrolls to the specified point, the element switches to a fixed position and does not scroll with the rest of the content.
-
+When the specified scroll point is reached, the element then switches to a fixed position (as if set to `position: fixed`) and does not scroll with the rest of the content.
 
 Here's an example:
 
@@ -28,5 +27,3 @@ line_highlights:
 Line 2 sets the position property to `sticky` for any element with the attribute `class="sticky-element"`.
 
 Line 3 sets the distance from the top of the viewport where the element becomes 'sticky' (its position becomes fixed).
-
-`position: sticky` is often used for navigation bars or elements that you want to remain visible as the user scrolls down the page but return to their normal position when scrolling back up.
