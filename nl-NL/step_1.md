@@ -1,12 +1,12 @@
-`position: sticky` is often used for navigation bars or elements that you want to remain visible as the user scrolls down the page but return to their normal position when scrolling back up.
+`position: sticky` wordt vaak gebruikt voor navigatiebalken of elementen die zichtbaar moeten blijven wanneer de gebruiker naar beneden scrolt op de pagina, maar die moeten terugkeren naar de normale positie wanneer de gebruiker weer omhoog scrolt.
 
-When an element is set to `position: sticky`, it initially behaves like `position: relative`.
+Wanneer een element is ingesteld op `position: sticky`, gedraagt het zich in eerste instantie als `position: relative`.
 
-This means the element will appear in the normal position in the document.
+Dit betekent dat het element op de normale positie in het document wordt weergegeven.
 
-When the specified scroll point is reached, the element then switches to a fixed position (as if set to `position: fixed`) and does not scroll with the rest of the content.
+Wanneer het opgegeven scrolpunt is bereikt, schakelt het element over naar een vaste positie (alsof het is ingesteld op `position: fixed`) en scrolt het niet mee met de rest van de inhoud.
 
-Here's an example:
+Hier is een voorbeeld:
 
 ## --- code ---
 
@@ -24,6 +24,6 @@ top: 50px;
 
 \--- /code ---
 
-Line 2 sets the position property to `sticky` for any element with the attribute `class="sticky-element"`.
+Regel 2 stelt de positie-eigenschap in op `sticky` voor elk element met het kenmerk `class="sticky-element"`.
 
-Line 3 sets the distance from the top of the viewport where the element becomes 'sticky' (its position becomes fixed).
+Regel 3 stelt de afstand in vanaf de bovenkant van het venster waarop het element `sticky` wordt (de positie wordt vastgezet).
