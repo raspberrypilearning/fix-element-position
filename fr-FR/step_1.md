@@ -1,12 +1,12 @@
-`position: sticky` is often used for navigation bars or elements that you want to remain visible as the user scrolls down the page but return to their normal position when scrolling back up.
+`position: sticky` est souvent utilisé pour les barres de navigation ou les éléments que tu souhaites garder visibles lorsque l'utilisateur fait défiler la page vers le bas, mais qui reviennent à leur position normale lorsqu'il fait défiler vers le haut.
 
-When an element is set to `position: sticky`, it initially behaves like `position: relative`.
+Quand un élément est défini sur `position: sticky`, il se comporte initialement comme `position: relative`.
 
-This means the element will appear in the normal position in the document.
+Cela signifie que l'élément apparaîtra dans la position normale dans le document.
 
-When the specified scroll point is reached, the element then switches to a fixed position (as if set to `position: fixed`) and does not scroll with the rest of the content.
+Lorsque le point de défilement spécifié est atteint, l'élément passe à une position fixe (comme s'il était réglé sur `position: fixed`) et ne défile pas avec le reste du contenu.
 
-Here's an example:
+Voici un exemple :
 
 ## --- code ---
 
@@ -24,6 +24,6 @@ top: 50px;
 
 \--- /code ---
 
-Line 2 sets the position property to `sticky` for any element with the attribute `class="sticky-element"`.
+La ligne 2 définit la propriété de position sur `sticky` pour tout élément avec l'attribut `class="sticky-element"`.
 
-Line 3 sets the distance from the top of the viewport where the element becomes 'sticky' (its position becomes fixed).
+La ligne 3 définit la distance à partir du haut de la fenêtre d'affichage où l'élément devient 'sticky' (sa position devient fixe).
